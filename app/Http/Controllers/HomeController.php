@@ -8,15 +8,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $data = [
-            'nama' => 'Doraemon',
-            'pekerjaan' => 'developer',
-        ];
-        return view('home')->with($data);
-    }
-
-    public function contact()
-    {
-        return view ('contact');
+        return view('pages.home'); // Ganti 'home' dengan nama file blade kamu, misalnya home.blade.php
     }
 }
